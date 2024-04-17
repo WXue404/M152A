@@ -30,7 +30,7 @@ module tb;
         #1500000;
         $readmemb("seq.code", memory_arr);
        
-        for (i=1;i<memory_arr[0];i=i+1) begin
+        for (i=1;i<=memory_arr[0];i=i+1) begin
             tskRunInst(memory_arr[i]);
         end
         
